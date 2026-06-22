@@ -1,13 +1,13 @@
 # CLAUDE.md — dotfiles-Alpine
 
 Project memory for Claude Code, auto-loaded every session. For the shared Core
-rules (the "is it Core?" test, the manifest contract, the load order) see
-`core/CLAUDE.md` and `core/CONTRIBUTING.md`.
+rules (the load order, the "is it Core?" test, the manifest contract) see
+`core/README.md` and `core/CONTRIBUTING.md`.
 
 ## What this repo is
 
-`dotfiles-Alpine` is the **OS-native layer for Alpine Linux (stamped from the Fedora template)** of a ten-repo, three-layer dotfiles fleet
-(Core → OS-native → Role → Showcase). The outlier: **musl libc, not glibc** — glibc-linked prebuilt binaries will not run, so prefer `apk` packages or musl builds. Default shell is `ash`, privilege tool is `doas` (not sudo), and many commands are busybox applets. Keep this layer lean.
+`dotfiles-Alpine` is the **OS-native layer for Alpine Linux** in a **nine-repo dotfiles system** built on a three-layer
+model (Core → OS-native → Role). Stamped from the Fedora template (see `core/PORTING-MATRIX.md`). The outlier: **musl libc, not glibc** — glibc-linked prebuilt binaries will not run, so prefer `apk` packages or musl builds. Default shell is `ash`, privilege tool is `doas` (not sudo), and many commands are busybox applets. Keep this layer lean.
 
 ## The rule that bites
 
